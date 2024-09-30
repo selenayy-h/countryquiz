@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(151, 69, 217);
+}
+.app{
+    background:#fff;
+    width:90%;
+    max-width: 600px;
+    margin: 100px auto 0 ;
+    border-radius: 10px;
+    padding: 30px;
+    border:1px ,solid;
+}
+.app h1{
+    font-weight: 25px;
+    color:#7aad0b;
+    font-weight: 600;
+    border-bottom: 1 px solid #333;
+    padding-bottom:30px; 
+
+}
+.quiz{
+    padding:20px 0;
+
+}
+
+.quiz h2 {
+    font-size:18px;
+    color:#4d2a00;
+    font-weight:600;
+}
+.btn{
+    background-color: #fff;
+    color:#222;
+    font-weight: 500;
+    width: 100%;/*her bir butonun genişliği*/
+    border:1px solid #222;/* butonların kenarlarına hafif siyahlık verme*/
+    padding: 10px;/*answer kutusunun yüksekliğini */
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;/* bir HTML elementinin üzerine fare imlecini getirdiğinizde, imlecin şeklini bir "el" simgesine dönüştürür.*/
+   transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    background: #483b90;
+    color:#fff;/*üstüne hoverla geldiğimizde mor olunca buttonlar yazıların beyaz olmasını sağlar*/
+    /* :not([disabled]):
+
+Bu seçici, disabled özelliği olmayan elemanları hedefler. Yani, disabled özelliğine sahip olmayan .btn elemanlarını seçer. Bu, :hover özelliğinin yalnızca aktif (devre dışı bırakılmamış) butonlar için geçerli olmasını sağlar. */
+
+}
+
+.btn:disabled{
+    cursor:no-drop;
+    /* fare imleci buraya geldiğinde Genellikle, "kullanıcı bu butona tıklayamaz" veya "bu buton kullanılabilir değil" anlamına gelir. */
+
+}
+
+
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 160px;
+    border:0;
+    padding:10px;
+    margin: 20px auto  0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+
+    background:#9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
